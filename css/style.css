@@ -1006,12 +1006,13 @@ margin-top: 60px;
 
 
 }
-.nav:hover .nav-item{
-	display: block;
-}
 .nav .nav-item{
-	display: none;
+	/*display: none;*/
 }
+.nav:hover .nav-item{
+	/*display: block;*/
+}
+
 .logo{
 	margin-top: 0;
 }

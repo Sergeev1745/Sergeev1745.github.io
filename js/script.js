@@ -1,5 +1,13 @@
 $( document ).ready(function() {
-    
+    if ($(window).width() <= '768'){
+      $('.nav-item').hide();
+      $('.nav').mouseout(function(){
+      $(this).children('.nav-item').hide()
+});
+      $('.nav').mouseover(function(){
+      $(this).children('.nav-item').show()
+});
+    }
     $("#map").googleMap({
       zoom: 8, // Initial zoom level (optional)
       center: [55.799989, 37.461509], // Map center (optional)
